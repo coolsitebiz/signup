@@ -1,13 +1,44 @@
 :root {
-    font-family: "Gruppo", 'Times New Roman', Times, serif;
-    
+    font-family: "Gruppo", 'Times New Roman', Times, serif; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #logo {
     height: 3em;
 }
 
-body {
-    background: url("chopper.jpg") rgb(18, 152, 255);
-    background-size: 250px;
+.main-wrapper {
+    min-height: 100vh;
+    background: url("chopper-smaller.jpg") rgb(18, 152, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center left;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-block {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    padding: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+#logo-block>img {
+    width: 3em;
+}
+
+#form {
+    width: 70vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    align-self: flex-end;
 }
