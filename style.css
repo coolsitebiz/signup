@@ -1,0 +1,13 @@
+:root {
+    font-family: "Gruppo", 'Times New Roman', Times, serif;
+    
+}
+
+#logo {
+    height: 3em;
+}
+
+body {
+    background: url("chopper.jpg") rgb(18, 152, 255);
+    background-size: 250px;
+}
