@@ -14,11 +14,63 @@
 
 <body>
     <div class="main-wrapper">
-        <div id="logo-block"> 
+        <div id="logo-block">
             <img id="logo" src="LogoMakr-4Nn1XX.png">
             <div>Prestige <br />Worldwide</div>
         </div>
-        <div id="form">text</div>
+        <div id="form">
+            <div class="form-top">
+                <p>Here is the text that goes in the top dov of the form. Please read this text before you fill out the
+                    form.</p>
+                <p>Enjoy filling out this form!</p>
+            </div>
+            <div class="form-bot">
+                <form action="">
+                    <div class="inputs">
+                            <div id="inputs-left">
+                                <ul>
+                                    <li>
+                                        <label for="fname">First name</label><br />
+                                        <input type="text" name="fname" id="fname" class="input name">
+                                    </li>
+
+                                    <li>
+                                        <label for="email">Email</label><br />
+                                        <input type="email" name="email" id="email" class="input email">
+                                    </li>
+                                    <li>
+                                        <label for="password">Password</label><br />
+                                        <input type="password" id="pass" name="pass" class="input error">
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div id="inputs-right">
+                                <ul>
+                                    <li>
+                                        <label for="lname">Last name</label><br />
+                                        <input type="text" name="lname" id="lname" class="input name">
+                                    </li>
+                                    <li>
+                                        <label for="tel">Telephone</label><br />
+                                        <input type="tel" name="tel" id="tel" class="input telephone">
+                                    </li>
+
+                                    <li>
+                                        <label for="pass-confirm">Confirm password</label><br />
+                                        <input type="password" name="pass-confirm" id="pass-confirm" class="input error">
+                                    </li>
+                                </ul>
+                            </div>
+
+                    </div>
+                    <div class="form-submit">
+                        <button>Submit</button>
+                        <p>Already have an account? <a href="">Log in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
 
     </div>
 
