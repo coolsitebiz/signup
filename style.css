@@ -1,126 +1,151 @@
 :root {
-    font-family: "Gruppo", 'Times New Roman', Times, serif; 
+  font-family: "Gruppo", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 #logo {
-    height: 3em;
+  height: 3em;
 }
 
 .main-wrapper {
-    height: 100vh;
-    background: url("chopper-smaller.jpg") rgb(18, 152, 255);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center left;
-    display: flex;
-    justify-content: space-between;
+  height: 100vh;
+  background: url("chopper-smaller.jpg") rgb(18, 152, 255);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center left;
+  display: flex;
+  justify-content: space-between;
 }
 
 #logo-block {
-    display: flex;
-    flex-direction: column;
-    height: 10rem;
-    padding: 4rem 2rem 2rem 3rem;
-    font-size: 2rem;
-    font-weight: bold;
-    align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  padding: 4rem 2rem 2rem 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  align-self: flex-start;
 }
 
-#logo-block>img {
-    width: 3em;
+#logo-block > img {
+  width: 3em;
 }
 
 #form {
-    width: 70vw;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.9);
-    align-self: flex-end;
-    box-shadow: 0px -15px 50px black;
-    display: flex;
-    flex-direction: column;
-    
+  width: 70vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  align-self: flex-end;
+  box-shadow: 0px -15px 50px black;
+  display: flex;
+  flex-direction: column;
 }
 
-#form>.form-top {
-    height: 25vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 0rem 4rem 1rem 1.5rem;
+#form > .form-top {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0rem 4rem 1rem 1.5rem;
 }
 
-#form>.form-top>p {
-    margin-bottom: 1rem;
+#form > .form-top > p {
+  margin-bottom: 1rem;
 }
 
-#form>.form-bot {
-    height: 75vh;
-    font-size: 1rem;
-    background-color: rgba(125, 218, 255, 0.253)
+#form > .form-bot {
+  height: 75vh;
+  font-size: 1rem;
+  background-color: rgba(125, 218, 255, 0.253);
 }
 
 .inputs {
-    display: flex;
-    flex-wrap: wrap;
+  max-width: 700px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.inputs > div {
+  margin: 1em 1.5em 0;
+}
 
 .input {
-    font-size: 1.4em;
-    padding: .1rem;
-    margin-top: .3rem;
-    border-radius: 5px;
+  font-size: 1.4em;
+  padding: 0.1rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
 }
 
-.input:focus{
-    border: 1px solid rgb(0, 110, 255);
-    box-shadow: 1px 1px 3px rgb(0, 110, 255);
-    outline: none;
+.input:focus {
+  border: 1px solid rgb(0, 110, 255);
+  box-shadow: 1px 1px 3px rgb(0, 110, 255);
+  outline: none;
+}
+
+.input:invalid {
+  border: 1px solid red;
+  box-shadow: 1px 1px 3px rgb(255, 0, 0);
 }
 
 .form-submit {
-    margin-left: 1.5rem;
+  margin-left: 1.5rem;
 }
 
-.form-submit>p {
-    font-weight: bold;
-    font-size: 1.5rem;;
-    margin-top: .5rem;
+.form-submit > p {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 .form-submit a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button {
-    padding: .5rem 3rem .5rem 3rem;
-    border-radius: 10px;
-    background-color: rgb(0, 110, 255);
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  border-radius: 10px;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Gruppo", sans-serif;
+  margin-top: 1.5em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgb(25, 150, 255);
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 li {
-    margin: 1.5em;
+  margin: 1.5em;
 }
 
 label {
-    font-weight: bold;
-    font-size: 1.2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
+@media (max-width: 960px) {
+  .inputs {
+    flex-direction: column;
+  }
 
-
+  .input {
+    width: 250px;
+  }
+}
